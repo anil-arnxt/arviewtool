@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"pages\\\\components\\\\modelviewer.jsx -> @google/model-viewer":{"id":2768,"files":["static/chunks/b536a0f1.aa1f5dae23d029ed.js","static/chunks/444.ab73d1a73e95d443.js","static/chunks/fb7d5399.9f0bb34ab55eb52a.js","static/chunks/768.b4e156ff17a48dde.js"]}}';
