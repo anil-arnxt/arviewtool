@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import '../../src/app/globals.css'
 
 
-const modelviewer = ({props}) => {
+const Modelviewer = ({props}) => {
 
         useEffect(()=>{
 
@@ -86,4 +86,4 @@ const modelviewer = ({props}) => {
   )
 }
 
-export default modelviewer
+export default Modelviewer
