@@ -11,16 +11,10 @@ import { fetchitem } from "../../services";
 // import dynamic from 'next/dynamic';
 // import { useParams, useSearchParams } from 'next/navigation';
 
-
-
-
-
-
 export const  getServerSideProps = async (context)=> {
 
- 
+     const {id} = context.query
 
-    const { id } = context.query;
      const datavalue = await fetchitem(id) || [];
      return { props: { 
 
