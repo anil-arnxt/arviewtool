@@ -47,15 +47,14 @@ const Modelviewer = ({props}) => {
     <model-viewer
       
    src= {props.datavalue[0]?.glburl}
-        ios-src =''
-          modes="scene-viewer quick-look webxr"
+        ios-src = {props.datavalue[0]?.usdzurl}
+          modes="webxr scene-viewer quick-look"
            ar
            ar-scale = "auto"
-           environment-image="neutral"
-           ar-placement= 'floor'
-          camera-controls touch-action="pan-y"
-          
-          shadow-intensity="1"
+          ar-placement= 'floor'
+          camera-controls
+           touch-action="pan-y"
+           shadow-intensity="1"
           crossorigin="anonymous" 
        
       ref={modelRef.current}

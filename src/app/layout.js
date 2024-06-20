@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <Script
           type="module"
           src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/+esm"
-          strategy="afterInteractive"
+        
         />
         {children}</body>
     </html>
