@@ -56,7 +56,7 @@ export default function Viewinar(props) {
     
            <div className="w-full">
     
-    <Modelviewer props={props}/>
+    <Modelviewer props={props} />
      
     </div>
         </>

@@ -19,6 +19,7 @@ const Modelviewer = ({props}) => {
 
 
     const modelRef =  useRef();
+
   return (
 
       <div className='w-full'>  
