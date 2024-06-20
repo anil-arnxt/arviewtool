@@ -1,4 +1,5 @@
 import axios from "axios";
+import { notFound } from "next/navigation";
 
 export const fetchitem = async (id) => {
 
@@ -9,10 +10,8 @@ export const fetchitem = async (id) => {
     
 
         const response = await axios.post(`https://ymxx21tb7l.execute-api.ap-south-1.amazonaws.com/production/getclientdatabyid`, body)
-
+   
         return response.data
-  
-
 
     } catch (err) {
         console.log('Facing error at getting client data => ' + err);

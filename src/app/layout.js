@@ -8,17 +8,25 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "ArNXT",
   description: "App for AR view",
+  icons: [
+    {
+      media: '',
+      url: '/images/aricon.ico',
+      href: '/images/aricon.ico',
+    },
+  ]
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
-       <Head>
-   
+  <Head>
+    
     
        </Head>
+    
       <body className={inter.className}>
+   
       <Script
           type="module"
           src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/+esm"

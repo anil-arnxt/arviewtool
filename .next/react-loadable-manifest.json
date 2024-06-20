@@ -2,6 +2,7 @@
   "pages\\components\\modelviewer.jsx -> @google/model-viewer": {
     "id": "pages\\components\\modelviewer.jsx -> @google/model-viewer",
     "files": [
+      "static/chunks/_app-pages-browser_node_modules_google_model-viewer_lib_model-viewer_js.js",
       "static/chunks/node_modules_google_model-viewer_lib_model-viewer_js.js"
     ]
   }

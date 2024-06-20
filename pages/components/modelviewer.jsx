@@ -23,7 +23,7 @@ const Modelviewer = ({props}) => {
 
       <div className='w-full'>  
       <div className='float-left w-12 h-12 m-4'>
-    <a  href='' >  <img src='https://arnxtdealerpageproducts.s3.ap-south-1.amazonaws.com/back.png' alt="icon" className="w-10 h-10"/></a>
+    <a  href={props.datavalue[0]?.productpageurl} >  <img src='https://arnxtdealerpageproducts.s3.ap-south-1.amazonaws.com/back.png' alt="icon" className="w-10 h-10"/></a>
 
         </div>        
     <div className=" float-right w-12 h-12 m-4">
@@ -46,11 +46,13 @@ const Modelviewer = ({props}) => {
 <div className='modalcontainerar'>
     <model-viewer
       
-   src= {props}
+   src= {props.datavalue[0]?.glburl}
         ios-src =''
           modes="scene-viewer quick-look webxr"
-           ar ar-scale = "fixed"
+           ar
+           ar-scale = "auto"
            environment-image="neutral"
+           ar-placement= 'floor'
           camera-controls touch-action="pan-y"
           
           shadow-intensity="1"
