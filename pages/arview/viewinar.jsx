@@ -34,6 +34,8 @@ export const  getServerSideProps = async (context)=> {
 
 export default function Viewinar(props) {
 
+ 
+
     // useEffect(() => { import('@google/model-viewer').catch(console.error); }, []);
 
 

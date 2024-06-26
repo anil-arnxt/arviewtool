@@ -1,9 +1,13 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
 import '../../src/app/globals.css'
+import axios from 'axios'
 
 
 const Modelviewer = ({props}) => {
+
+
+    const viewsdataposturl = 'https://ymxx21tb7l.execute-api.ap-south-1.amazonaws.com/production/addviewscountclient'
 
         useEffect(()=>{
 
@@ -19,6 +23,17 @@ const Modelviewer = ({props}) => {
 
 
     const modelRef =  useRef();
+
+    const handleviewclick = async ()=>{
+        const body = {
+           Id : props?.datavalue[0].Id,
+           productname : props?.datavalue[0].productname,
+           brand : props?.datavalue[0].brandname,
+           viewtime: new Date().getTime().toString()
+        }
+        const response = await axios.post(viewsdataposturl, body)
+
+    }
 
   return (
 
@@ -63,7 +78,7 @@ const Modelviewer = ({props}) => {
       
    >
 
-<button slot="ar-button" id="ar-button">
+<button slot="ar-button" id="ar-button" onClick={handleviewclick}>
     View in your space
   </button>
 
